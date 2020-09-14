@@ -20,7 +20,7 @@ try:
     if len(response) == 0:
         print("Server has disconnect...")
     else:
-        print response
+        print(response)
 
 
 except:

@@ -179,7 +179,7 @@ def client_handler(client_socket):
             #acknowledge that we wrote the file
             client_socket.send("Successfully saved file to %s\r\n" % upload_destination)
         except:
-            client.socket.send("Failed to save file to %s\r\n" % upload_destination)
+            client_socket.send("Failed to save file to %s\r\n" % upload_destination)
 
     #check for execution
     if len(execute):
